@@ -1,0 +1,29 @@
+Question 2 documentation
+
+1) by using python scripts we can we can check status of subdomains
+2) for these in python we have to use library name  requests
+3)now wo to view results in tabular format we have anohter library in python name as prettytable
+
+4) first now we va e to install both library in our machine
+
+command ==>pip install requests prettytable
+
+5)code explanation 
+
+Imports:
+
+The script imports requests for HTTP requests, time for delays, and PrettyTable for displaying results in a table.
+
+Subdomains:
+
+The subdomains list contains the URLs of the subdomains you want to check.
+
+Check Status Function:
+
+The check_status function attempts to get a response from the subdomain. It returns True for a 200 status code and False for any errors.
+
+Main Loop:
+
+The main function runs an infinite loop that creates a PrettyTable object to display the subdomain status.
+It adds each subdomain and its status to the table and prints it out.
+After displaying the status, it waits for 60 seconds before checking again.

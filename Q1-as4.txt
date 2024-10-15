@@ -1,0 +1,51 @@
+steps to achieve output of first question
+
+1) Install nginx
+
+command==>
+sudo apt update
+sudo apt install nginx
+
+2) Start nginx in your ubunut machine
+
+commad==>
+
+sudo systemctl start nginx
+sudo systemctl enable nginx
+
+3) Once you install nginx then /var/www partition will get created. now create the folder insdie mentioned dir.
+
+commadn ==>
+
+sudo mkdir /var/www/awesomeweb
+
+4) Now create HTML code and keep inside the above mentioned dir.
+
+lets suppose file name is index.html
+
+5) Now one dir will get created once you install nginx in your ubuntu machine 
+
+dir ==> sudo vi  /etc/nginx/sites-available/awesomeweb
+
+Add below mentioned configuration in to the particular file 
+
+server {
+    listen 80;
+    server_name awesomeweb;
+
+    location / {
+        root /var/www/awesomeweb;
+        index index.html;
+    }
+}
+
+server name should be as  per your website name 
+
+6)Now edit the hosts file which is located in your below mentioned dir
+
+dir ==> /etc/hosts
+
+7) add 127.0.0.1 as website name 
+mentioned ip is localhost ip .
+
+done 

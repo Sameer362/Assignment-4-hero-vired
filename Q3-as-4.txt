@@ -1,0 +1,39 @@
+steps for virtual box assignment 
+1)  Download VirtualBox for the official website 
+
+2)as per your host machine choose correct package i.e. ubuntu , windows, mac
+
+3)for ubuntu use below mentioned command to install virtaul box
+
+command==> sudo dpkg -i <VirtualBox_package_name>.deb 
+
+4) while installing some error will reflects wiht the package name mentioned over there
+
+if you got the error then install particualr package with hte help of apt-get command
+
+5)post installation add virtualbox user to group using groupadd command for ubuntu and give appropriate permission .
+
+6) once you install then download iso image of ubuntu 22.04 from the officail repo.
+
+7) click on new provide vm name and all necessary required information about ram rom.
+
+8) it willl consume ram and rom as per your host machine storage 
+
+9) there is one hard disk section is present over there 
+
+10) give path where you have downloaded the image i.e.iso image of ubuntu 
+
+11) after that before creating vm it will ask you to give user name and password 
+
+12) give proper username and password it will help you to login to your vm 
+
+13) once you enter to the vm install nginx and host website basic html 
+
+14) then install nmap using below mentioned command
+
+command==> sudo apt-get install nmap -y 
+
+15) after installtion using below command you will get idea about port opening
+
+command==> nmap -sS -p- your_vm_ip
+ 
